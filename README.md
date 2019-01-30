@@ -1,4 +1,4 @@
-#  V3.2
+#  V2.0
 
 ## 介绍
 pau基于SpringBoot,致力于做更简洁的后台管理系统,完美整合springmvc + shiro + mybatis-plus + beetl + flowable!pau项目代码简洁,注释丰富,上手容易,同时pau包含许多基础模块(用户管理,角色管理,部门管理,字典管理等10个模块),可以直接作为一个后台管理系统的脚手架! 2018目标 `更简洁`,`更规范`!
@@ -20,7 +20,7 @@ pau v3.1新增集成工作流引擎flowable6.2.0!
 6. controller层采用map + warpper方式的返回结果，返回给前端更为灵活的数据，具体参见com.soft.ware.modular.system.warpper包中具体类。
 7. 防止XSS攻击,通过XssFilter类对所有的输入的非法字符串进行过滤以及替换。
 8. 简单可用的代码生成体系，通过SimpleTemplateEngine可生成带有主页跳转和增删改查的通用控制器、html页面以及相关的js，还可以生成Service和Dao，并且这些生成项都为可选的，通过ContextConfig下的一些列xxxSwitch开关,可灵活控制生成模板代码，让您把时间放在真正的业务上。
-9. 控制器层统一的异常拦截机制,利用@ControllerAdvice统一对异常拦截,具体见com.stylefeng.pau.core.aop.GlobalExceptionHandler类。
+9. 控制器层统一的异常拦截机制,利用@ControllerAdvice统一对异常拦截,具体见com.soft.ware.core.aop.GlobalExceptionHandler类。
 10. 页面统一的js key-value单例模式写法，每个页面生成一个唯一的全局变量，提高js的利用效率，并且有效防止多个人员开发引起的函数名/类名冲突，并且可以更好地去维护代码。
 
 ## 基于javabean方式的spring配置
