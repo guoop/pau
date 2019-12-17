@@ -11,7 +11,6 @@ jwt:
 
 server:
   port: 80 #项目端口
-
 mybatis-plus:
   mapper-locations: classpath*:com/paulo/pau/rest/**/mapping/*.xml
   typeAliasesPackage: com.soft.ware.rest.common.persistence.model
@@ -32,6 +31,21 @@ spring:
       username: root
       password: root
       filters: log4j,wall,mergeStat
+  kafka:
+    bootstrap-servers:
+        localhost: 8080
+    producer:
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 335554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: user-log-group
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 logging:
   level.root: info

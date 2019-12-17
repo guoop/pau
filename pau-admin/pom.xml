@@ -8,7 +8,6 @@
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pau-parent/pom.xml</relativePath>
 	</parent>
-
 	<artifactId>pau-admin</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
     <groupId>com.soft.ware</groupId>
